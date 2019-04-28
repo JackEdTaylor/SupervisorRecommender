@@ -41,7 +41,8 @@ ui <- dashboardPage(
   dashboardBody(
     
     tags$head(
-      tags$link(rel = "stylesheet", type = "text/css", href = "style.css")
+      tags$link(rel = "stylesheet", type = "text/css", href = "style.css"),
+      tags$link(rel="shortcut icon", href="https://www.gla.ac.uk/favicon.ico")
     ),
     
     lapply(1:nrow(dat), function(i) {
