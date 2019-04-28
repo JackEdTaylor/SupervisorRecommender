@@ -1,0 +1,46 @@
+img {
+  float: left;
+  height: 200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.main-sidebar .user-panel, .sidebar-menu, .sidebar-menu>li.header.p {
+  white-space: normal;
+  padding: 10px;
+}
+
+.skin-blue .main-header .navbar {
+  background-color: #003865;
+}
+
+.skin-blue .main-header .logo {
+  text-align: left;
+  background-color: #003865;
+}
+
+.skin-blue .main-header .logo:hover {
+  background-color: #003865;
+}
+
+.box.box-solid.box-info>.box-header {
+  background: #003865;
+}
+
+.box.box-solid.box-info {
+  border: 1px solid #222d32;
+}
+
+#lh-checkboxes:after {
+  content: "";
+  background-color: #FFF;
+  position: absolute;
+  width: 2px;
+  height: 400px;
+  left: 50%;
+  display: block;
+}
+
+label.control-label {
+  text-decoration: underline;
+}
