@@ -17,7 +17,11 @@ ui <- dashboardPage(
   
   skin = "blue",
   
-  dashboardHeader(title = "Supervisor Recommender", titleWidth = sidebarwidth),
+  dashboardHeader(title = "Supervisor Recommender", titleWidth = sidebarwidth,
+                  tags$li(a(href = "https://github.com/JackEdTaylor/SupervisorRecommender",
+                            HTML(paste(icon("github"), "&nbsp;Code")),
+                            title = "GitHub Repository"),
+                          class="dropdown")),
   
   dashboardSidebar(
     width = sidebarwidth,

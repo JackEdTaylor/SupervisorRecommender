@@ -44,3 +44,7 @@ img {
 label.control-label {
   text-decoration: underline;
 }
+
+.nav>li {
+  font-size: 15px;
+}
