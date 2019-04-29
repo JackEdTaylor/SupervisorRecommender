@@ -28,7 +28,7 @@ ui <- dashboardPage(
     sidebarMenu(
       fluidRow(
         column(12, HTML(
-          '<p>Welcome! This app is designed to help you identify a suitable supervisor for the <a href="https://www.gla.ac.uk/postgraduate/taught/psychologicalscienceresearchmethodsof/">Research Methods of Psychological Science MSc</a> course at the University of Glasgow.<br><br>Just tick any topics or methods you are interested in, and the app will suggest supervisors in order of how relevant their research is.<br><br>Click on a supervisor to find out more about them.</p>'
+          '<p>Welcome! This app is designed to help you identify a suitable supervisor for the <a href="https://www.gla.ac.uk/postgraduate/taught/psychologicalscienceresearchmethodsof/">Research Methods of Psychological Science MSc</a> course at the University of Glasgow.<br><br>Just tick any topics or methods you are interested in, and the app will suggest supervisors in order of how relevant their research is.<br><br>Click on a supervisor to find out more about them.<br><br></p>'
         ))
       ),
       fluidRow(
