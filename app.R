@@ -71,8 +71,6 @@ server <- function(input, output) {
     }) %>%
       unname()
     
-    out$total_n <- out$topics_n + out$methods_n
-    
     out %>%
       mutate(total_n = topics_n + methods_n) %>%
       arrange(desc(total_n))
