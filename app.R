@@ -8,7 +8,7 @@ dat <- read_csv("supervisors.csv") %>%
     topics = str_replace_all(topics, "(,) +", ","),
     methods = str_replace_all(methods, "(,) +", ",")
   ) %>%
-  separate(name, c("name_first", "name_last"), " ", remove = FALSE) %>%
+  mutate(name = paste(name_first, name_last, sep = " ")) %>%
   arrange(name_last)
 topics_vec <- sort(unique(unlist(str_split(dat$topics, ","))))
 methods_vec <- sort(unique(unlist(str_split(dat$methods, ","))))
