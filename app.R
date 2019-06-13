@@ -19,7 +19,7 @@ ui <- dashboardPage(
   
   dashboardHeader(title = "Supervisor Recommender", titleWidth = sidebarwidth,
                   tags$li(a(href = "https://github.com/JackEdTaylor/SupervisorRecommender",
-                            HTML(paste(icon("github"), "&nbsp;Code")),
+                            HTML(paste(icon("github"), "&nbsp;GitHub")),
                             title = "GitHub Repository"),
                           class="dropdown")),
   
