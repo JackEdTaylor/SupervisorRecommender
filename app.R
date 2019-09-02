@@ -8,10 +8,6 @@ dat <- read_csv("supervisors.csv") %>%
     topics = str_replace_all(topics, "(,) +", ","),
     methods = str_replace_all(methods, "(,) +", ",")
   ) %>%
-  mutate(
-    topics = tolower(topics),
-    methods = tolower(methods)
-  ) %>%
   mutate(name = paste(name_first, name_last, sep = " ")) %>%
   arrange(name_last)
 topics_vec <- sort(unique(unlist(str_split(dat$topics, ","))))
