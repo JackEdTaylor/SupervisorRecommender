@@ -43,6 +43,7 @@ img {
 
 label.control-label {
   text-decoration: underline;
+  margin-bottom: 15px;
 }
 
 .nav>li {
