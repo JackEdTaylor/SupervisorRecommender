@@ -8,6 +8,10 @@ dat <- read_csv("supervisors.csv") %>%
     topics = str_replace_all(topics, "(,) +", ","),
     methods = str_replace_all(methods, "(,) +", ",")
   ) %>%
+  mutate(
+    topics = tolower(topics),
+    methods = tolower(methods)
+  ) %>%
   mutate(name = paste(name_first, name_last, sep = " ")) %>%
   arrange(name_last)
 topics_vec <- sort(unique(unlist(str_split(dat$topics, ","))))
@@ -109,17 +113,9 @@ server <- function(input, output) {
           title = a(href = sup_dat$page, box_title),
           width = 12, status = "info", solidHeader = TRUE,
           fluidRow(
-            
-            HTML(
-              paste(
-                c(
-                  sprintf('<p><a href="%s"><img src="%s"></a>%s', sup_dat$page, sup_dat$image, sup_dat$message),
-                  topics_matches_str,
-                  methods_matches_str,
-                  "</p>"),
-                collapse = "<br><br>"
-              )
-            )
+            column(12, HTML(sprintf('<p><a href="%s"><img src="%s"></a>%s', sup_dat$page, sup_dat$image, sup_dat$message))),
+            column(12, tags$p(topics_matches_str)),
+            column(12, tags$p(methods_matches_str))
           )
           
         )
