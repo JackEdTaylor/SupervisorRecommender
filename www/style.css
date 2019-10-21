@@ -41,7 +41,7 @@ img {
   background-color: #FFF;
   position: absolute;
   width: 2px;
-  height: 700px;  /* Play around with this to get the separator height right */
+  height: 900px;  /* Play around with this to get the separator height right */
   left: 50%;
   display: block;
 }
